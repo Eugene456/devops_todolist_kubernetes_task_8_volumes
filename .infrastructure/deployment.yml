@@ -68,6 +68,8 @@ spec:
         - name: app-secrets-volume
           secret:
             secretName: app-secret
+            defaultMode: 0444
         - name: app-config-volume
           configMap:
             name: app-config
+            defaultMode: 0444
